@@ -1,7 +1,7 @@
 GunRC - GTK Universal Network Remote Control
 ============================================
 
-[![solarized dualmode](https://github.com/maccyber/gunrc/screenshot.png)](#features)
+.. image:: https://github.com/maccyber/gunrc/screenshot.png
 
 (#features)
 
