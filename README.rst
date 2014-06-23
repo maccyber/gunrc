@@ -2,7 +2,7 @@ GunRC - GTK Universal Network Remote Control
 ============================================
 
 .. image:: screenshot.png
-	:scale: 50 %
+   :scale: 50 %
 
 A GTK-3 remote control for network-connected devices such as:
 
