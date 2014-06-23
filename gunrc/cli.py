@@ -16,9 +16,6 @@ class Args:
 
 
 	def __init__(self):
-		self.skip_gui = True
-		self.start_visibility = None
-		self.start_shell = False
 		self.get = ''
 
 	def parser(self, argv):
