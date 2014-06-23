@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GunRC
+Comment=A GTK remote control for network devices
+Exec=gunrc
+Terminal=false
+Type=Application
+Icon=gunrc
+Categories=GTK;Media
+StartupNotify=true
