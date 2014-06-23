@@ -1,7 +1,7 @@
 GunRC - GTK Universal Network Remote Control
 ============================================
 
-.. image:: https://github.com/maccyber/gunrc/screenshot.png
+.. image:: screenshot.png
 
 (#features)
 
