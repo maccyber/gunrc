@@ -1,9 +1,9 @@
-<device type="enigma">
+<box device="enigma2">
 <poweron>powerstate?newstate=0</poweron>
 <poweroff>powerstate?newstate=0</poweroff>
 <muteon>vol?set=mute</muteon>
 <volumeplus>vol?set=up</volumeplus>
-<volumeminus>vol?set=down</volumedown>
+<volumeminus>vol?set=down</volumeminus>
 <zero>remotecontrol?command=11</zero>
 <one>remotecontrol?command=2</one>
 <two>remotecontrol?command=3</two>
@@ -25,4 +25,4 @@
 <play>remotecontrol?command=164</play>
 <pause>remotecontrol?command=164</pause>
 <stop>remotecontrol?command=128</stop>
-</device>
+</box>
