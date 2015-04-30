@@ -10,7 +10,7 @@ def sendToDevice(server, port, sendcode, method):
 		returnmessage = 'Message sent'
 		logger.debug("http")
 		url = 'http://' + server + '/web/' + sendcode
-		logger.info('Sending data: %s', sendcode, url)
+		logger.info('Sending data: %s %s', sendcode, url)
 		page = urllib.request.urlopen(url)
 		return returnmessage
 	else:
