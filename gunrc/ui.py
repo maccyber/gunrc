@@ -38,6 +38,8 @@ class window1():
 		self.entryServer = self.builder.get_object('entryServer')
 		self.entryPort = self.builder.get_object('entryPort')
 		self.entryXml = self.builder.get_object('entryXml')
+		self.radioTelnet = self.builder.get_object('radioTelnet')
+		self.radioHttp = self.builder.get_object('radioHttp')
 		self.comboProfileConfig = self.builder.get_object('comboProfileConfig')
 		self.statusbar = self.builder.get_object('statusbar')
 
@@ -238,6 +240,7 @@ class window1():
 		server = ''
 		port = ''
 		xml = ''
+		method = ''
 
 		# If not default <new profile>
 		if activeIndex > 0:
@@ -247,6 +250,7 @@ class window1():
 			server = cfg.getValue(entryProfile, 'server')
 			port = cfg.getValue(entryProfile, 'port')
 			xml = cfg.getValue(entryProfile, 'xml')
+			method = cfg.getValue(entryProfile, 'method')
 
 
 		self.entryProfile.set_text(entryProfile)
@@ -254,6 +258,10 @@ class window1():
 		self.entryPort.set_text(port)
 		self.entryXml.set_text(xml)
 		self.entryProfile.set_sensitive(entryProfileEdit)
+		if method == "http":
+			self.radioHttp.set_active(True)
+		else:
+			self.radioTelnet.set_active(True)
 
 		logger.debug('Config active config profile is %s', activeText)
 
@@ -262,6 +270,10 @@ class window1():
 		server = self.entryServer.get_text()
 		port =  self.entryPort.get_text()
 		xml =  self.entryXml.get_text()
+		if self.radioHttp.get_active():
+			method = "http"
+		else:
+			method = "telnet"
 
 		if not (profile and server and port and xml):
 			logger.info('Required fields not filled out')
@@ -274,12 +286,14 @@ class window1():
 			cfg.set(profile, 'server', server)
 			cfg.set(profile, 'port', port)
 			cfg.set(profile, 'xml', xml)
+			cfg.set(profile, 'method', method)
 			cfg.writeConfig()
 
 			logger.debug('Button Save clicked')
 			logger.debug('Profile: %s', profile)
 			logger.debug('Server: %s', server)
 			logger.debug('Port: %s', port)
+			logger.debug('Method: %s', method)
 			logger.debug('XML-file: %s', xml)
 			logger.info('Saved config')
 
