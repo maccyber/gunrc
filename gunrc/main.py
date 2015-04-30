@@ -43,10 +43,13 @@ def main(argv):
 		xml = cfg.getValue(profile, 'xml')
 		logger.debug('XML-file: %s', xml)
 		
+		method = cfg.getValue(profile, 'method')
+		logger.debug('XML-file: %s', method)
+		
 		sendcode = xmlmap(xml, command)
 
 		if sendcode:
-			sendToDevice(server, port, sendcode)
+			sendToDevice(server, port, sendcode, method)
 	elif args.get.list:
 		cfg = Config(0)
 		# List
