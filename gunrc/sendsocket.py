@@ -1,13 +1,24 @@
 import socket
 import sys
 import logging
+import urllib.request
 
-def sendToDevice(server, port, sendcode):
+def sendToDevice(server, port, sendcode, method):
 	logger = logging.getLogger('gunrc')
-	returnmessage = 'Could not send command to device'
+  
+	if method == "http":
+		returnmessage = 'Message sent'
+		logger.debug("http")
+		url = 'http://' + server + '/web/' + sendcode
+		logger.info('Sending data: %s', sendcode, url)
+		page = urllib.request.urlopen(url)
+		return returnmessage
+	else:
+		logger.debug("telnet")
+		returnmessage = 'Could not send command to device'
 
-	# Send singal to device
-	try:
+		# Send singal to device
+		try:
 			# Create socket
 			clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -31,9 +42,9 @@ def sendToDevice(server, port, sendcode):
 				logger.info('Data sent successfully')
 			clientsocket.close()
 
-	except Exception as msg:
-		returnmessage = 'Could not send command to device: ' + str(msg)
-		logger.error(msg)
+		except Exception as msg:
+			returnmessage = 'Could not send command to device: ' + str(msg)
+			logger.error(msg)
 
-	return returnmessage
+		return returnmessage
 

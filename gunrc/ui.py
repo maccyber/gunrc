@@ -63,6 +63,7 @@ class window1():
 		server = cfg.getValue('active', 'server')
 		port = cfg.getValue('active', 'port')
 		xml = cfg.getValue('active', 'xml')
+		method = cfg.getValue('active', 'method')
 
 		# Update statusbar
 		self.statusUpdate('Sending: <%s> to device' %code)
@@ -73,7 +74,7 @@ class window1():
 		# If sendcode was found and converted OK
 		if sendcode:
 			# Send sendcode to device
-			resp = sendToDevice(server, port, sendcode)
+			resp = sendToDevice(server, port, sendcode, method)
 
 			# and update statusbar with device response
 			self.statusUpdate(resp)
