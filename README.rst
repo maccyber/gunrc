@@ -27,15 +27,15 @@ Using GunRC
 
     optional arguments:
 
-     -h, --help            show this help message and exit
+     -h, --help             show this help message and exit
 
-     -V, --version         show program's version number and exit
+     -V, --version          show program's version number and exit
 
-     -d                    turn on for debugging
+     -d                     turn on for debugging
 
      -l {profiles,commands} list available profiles or commands
 
-     -c PROFILE COMMAND    send COMMAND to device in PROFILE
+     -c PROFILE COMMAND     send COMMAND to device in PROFILE
         
 
 Requirements
