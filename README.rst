@@ -33,9 +33,9 @@ Using GunRC
 
      -d                     turn on for debugging
 
-     -l {profiles,commands} list available profiles or commands
-
      -c PROFILE COMMAND     send COMMAND to device in PROFILE
+
+     -l {profiles,commands} list available profiles or commands
         
 
 Requirements
