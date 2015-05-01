@@ -21,6 +21,16 @@ Currently it supports:
 Using GunRC
 ============
 
+    $ usage: gunrc.py [-h] [-V] [-d] [-l {profiles,commands}] [-c PROFILE COMMAND]
+    $ cli example: gunrc -c default play
+    $ optional arguments:
+    $  -h, --help            show this help message and exit
+    $  -V, --version         show program's version number and exit
+    $  -d                    turn on for debugging
+    $  -l {profiles,commands} list available profiles or commands
+    $ -c PROFILE COMMAND    send COMMAND to device in PROFILE
+        
+
 Requirements
 ------------
 
