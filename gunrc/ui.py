@@ -217,6 +217,12 @@ class window1():
 
 	def btnVolDownClicked(self, button):
 		self.sendCodeToDevice('volumeminus')
+	
+	def btnOptOneClicked(self, button):
+		self.sendCodeToDevice('optone')
+	
+	def btnOptTwoClicked(self, button):
+		self.sendCodeToDevice('opttwo')
 
 	def btnSettingsClicked(self, button):
 		logger.debug('Opened settings window')
