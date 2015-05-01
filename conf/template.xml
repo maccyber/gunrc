@@ -1,6 +1,7 @@
 <device type="enigma">
 <poweron></poweron>
 <poweroff></poweroff>
+<zone2poweron></zone2poweron>
 <muteon></muteon>
 <volumeplus></volumeplus>
 <volumeminus></volumeminus>

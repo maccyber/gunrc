@@ -1,6 +1,7 @@
 <box device="enigma2">
 <poweron>powerstate?newstate=0</poweron>
 <poweroff>powerstate?newstate=0</poweroff>
+<zone2poweron></zone2poweron>
 <muteon>vol?set=mute</muteon>
 <volumeplus>vol?set=up</volumeplus>
 <volumeminus>vol?set=down</volumeminus>

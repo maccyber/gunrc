@@ -82,7 +82,7 @@ class window1():
 			self.statusUpdate(resp)
 		else:
 			# If sendcode was not found, give error messag
-			self.statusUpdate('Could not convert code from XML-map: %s' %sendcode)
+			self.statusUpdate('No keycode found in XML for command: %s' %sendcode)
 
 	# Get active index from combobox
 	def get_active_index(self, combobox):
