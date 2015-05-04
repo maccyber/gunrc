@@ -47,4 +47,13 @@
 <green>remotecontrol?command=399</green>
 <blue>remotecontrol?command=401</blue>
 <yellow>remotecontrol?command=400</yellow>
+<info>remotecontrol?command=358</info>
+<lame>remotecontrol?command=174</lame>
+<menu>remotecontrol?command=139</menu>
+<audio>remotecontrol?command=392</audio>
+<video>remotecontrol?command=393</video>
+<tv>remotecontrol?command=377</tv>
+<radio>remotecontrol?command=385</radio>
+<text>remotecontrol?command=388</text>
+<help>remotecontrol?command=138</help>
 </box>
