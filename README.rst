@@ -26,17 +26,21 @@ Using GunRC
     cli example: gunrc -c default play
 
     optional arguments:
+     
++------------------------+----------------------------------------+
+| Option                 | Description                            | 
++========================+========================================+ 
+| -h, --help             | how this help message and exit         | 
++------------------------+----------------------------------------+
+| -V, --version          | show program's version number and exit | 
++------------------------+----------------------------------------+ 
+| -d                     | turn on for debugging                  | 
++------------------------+----------------------------------------+ 
+| -l {profiles,commands} | turn on for debugging                  | 
++------------------------+----------------------------------------+ 
+| -c PROFILE COMMAND     | list available profiles or commands    | 
++------------------------+----------------------------------------+ 
 
-     -h, --help             show this help message and exit
-
-     -V, --version          show program's version number and exit
-
-     -d                     turn on for debugging
-
-     -c PROFILE COMMAND     send COMMAND to device in PROFILE
-
-     -l {profiles,commands} list available profiles or commands
-        
 
 Requirements
 ------------
