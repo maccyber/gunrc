@@ -25,9 +25,9 @@ def xmlmap(xml, command):
 	return sendcode
 
 def getDevice():
-  tree = et.parse(xml)
-  root = tree.getroot()
-  return root.get('device')
+	tree = et.parse(xml)
+	root = tree.getroot()
+	return root.get('device')
 
 def listAll(xml):
 	# XML read

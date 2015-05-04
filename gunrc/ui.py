@@ -116,7 +116,7 @@ class window1():
 	def statusUpdate(self, text):
 		#self.statusbar = self.builder.get_object('statusbar')
 		msgid = self.statusbar.push(0, text)
-		timeoutid = GObject.timeout_add(5000, self.statusRefresh, self, msgid)  
+		timeoutid = GObject.timeout_add(7000, self.statusRefresh, self, msgid)  
 
 	# When window gets killed
 	def onDeleteWindow(self, *args):
