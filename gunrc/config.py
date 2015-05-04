@@ -1,18 +1,27 @@
 import configparser
 import logging
 import os
+import os.path
 
 logger = logging.getLogger('gunrc')
 
 class Config:
 
 	# Set path to configfile
-	CONFIG_PATH = os.path.expanduser('~/.config/gunrc/gunrc')	
+	CONFIG_PATH = os.path.expanduser('~/.config/gunrc/')
+	CONFIG_FILE = os.path.expanduser('~/.config/gunrc/gunrc')
 
 	def __init__(self, profile):
+		if not os.path.isfile(Config.CONFIG_FILE):
+			os.mkdir(Config.CONFIG_PATH)
+			file = open(Config.CONFIG_FILE, "w")
+			file.write( "[general]\nactive = vsx\n\n[dreambox]\nserver = 192.168.1.1\nxml = /usr/share/gunrc/enigma2.xml\nport = 80\nmethod = http\n\n[vsx]\nserver = 192.168.1\nxml = /usr/share/gunrc/pioneer-vsx.xml\nport = 23\nmethod = telnet\n");
+			file.close()
+
 		self.profile = profile
 		self.config = configparser.ConfigParser()
-		self.config.read(Config.CONFIG_PATH)
+		self.config.read(Config.CONFIG_FILE)
+                                                
 		
 		# Get all sections in config
 		self.sections = self.config.sections()
@@ -72,5 +81,5 @@ class Config:
 		#self.writeConfig()
 
 	def writeConfig(self):
-		with open(Config.CONFIG_PATH, 'w') as configfile:
+		with open(Config.CONFIG_FILE, 'w') as configfile:
 			self.config.write(configfile)
