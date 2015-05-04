@@ -16,7 +16,7 @@
 <eight>remotecontrol?command=9</eight>
 <nine>remotecontrol?command=10</nine>
 <enter>remotecontrol?command=28</enter>
-<return>remotecontrol?command=102</return>
+<return>remotecontrol?command=174</return>
 <up>remotecontrol?command=103</up>
 <left>remotecontrol?command=105</left>
 <right>remotecontrol?command=106</right>
@@ -43,4 +43,8 @@
 <hdmi5></hdmi5>
 <hdmi6></hdmi6>
 <tvsat></tvsat>
+<red>remotecontrol?command=398</red>
+<green>remotecontrol?command=399</green>
+<blue>remotecontrol?command=401</blue>
+<yellow>remotecontrol?command=400</yellow>
 </box>

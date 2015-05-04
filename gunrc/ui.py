@@ -223,6 +223,14 @@ class window1():
 	
 	def btnOptTwoClicked(self, button):
 		self.sendCodeToDevice('opttwo')
+	def btnGreenClicked(self, button):
+		self.sendCodeToDevice('green')
+	def btnRedClicked(self, button):
+		self.sendCodeToDevice('red')
+	def btnYellowClicked(self, button):
+		self.sendCodeToDevice('yellow')
+	def btnBlueClicked(self, button):
+		self.sendCodeToDevice('blue')
 
 	def btnSettingsClicked(self, button):
 		logger.debug('Opened settings window')

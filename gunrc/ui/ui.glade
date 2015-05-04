@@ -139,7 +139,7 @@
             <property name="margin_start">10</property>
             <property name="margin_end">10</property>
             <property name="margin_top">20</property>
-            <property name="row_spacing">30</property>
+            <property name="row_spacing">20</property>
             <property name="column_spacing">30</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
@@ -561,20 +561,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="btnSettings">
-                <property name="label" translatable="yes">Settings</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="image">icnSettings</property>
-                <signal name="clicked" handler="btnSettingsClicked" swapped="no"/>
-              </object>
-              <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">13</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkLabel" id="labelProfile">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -711,12 +697,6 @@
             <child>
               <placeholder/>
             </child>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
             <style>
               <class name="box"/>
             </style>
@@ -725,6 +705,95 @@
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">10</property>
+            <property name="margin_right">10</property>
+            <property name="margin_top">20</property>
+            <property name="column_spacing">10</property>
+            <property name="row_homogeneous">True</property>
+            <property name="column_homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="btnRed">
+                <property name="label" translatable="yes">Red</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="btnRedClicked" swapped="no"/>
+                <style>
+                  <class name="rcBtn"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnYellow">
+                <property name="label" translatable="yes">Yellow</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="btnYellowClicked" swapped="no"/>
+                <style>
+                  <class name="rcBtn"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnBlue">
+                <property name="label" translatable="yes">Blue</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="btnBlueClicked" swapped="no"/>
+                <style>
+                  <class name="rcBtn"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnGreen">
+                <property name="label" translatable="yes">Green</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="yalign">0.55000001192092896</property>
+                <signal name="clicked" handler="btnGreenClicked" swapped="no"/>
+                <style>
+                  <class name="rcBtn"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <style>
+              <class name="box"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
@@ -743,6 +812,48 @@
             <property name="fill">True</property>
             <property name="pack_type">end</property>
             <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">10</property>
+            <property name="margin_right">10</property>
+            <property name="margin_top">20</property>
+            <property name="row_spacing">25</property>
+            <property name="column_spacing">30</property>
+            <property name="row_homogeneous">True</property>
+            <property name="column_homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="btnSettings">
+                <property name="label" translatable="yes">Settings</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">end</property>
+                <property name="image">icnSettings</property>
+                <signal name="clicked" handler="btnSettingsClicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <style>
+              <class name="box"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
           </packing>
         </child>
       </object>
@@ -780,6 +891,7 @@
   </object>
   <object class="GtkWindow" id="settingswindow">
     <property name="can_focus">False</property>
+    <property name="resizable">False</property>
     <signal name="delete-event" handler="hide" swapped="no"/>
     <child>
       <object class="GtkBox" id="box1">
