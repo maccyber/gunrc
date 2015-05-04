@@ -36,9 +36,9 @@ Using GunRC
 +------------------------+----------------------------------------+ 
 | -d                     | turn on for debugging                  | 
 +------------------------+----------------------------------------+ 
-| -l {profiles,commands} | turn on for debugging                  | 
+| -l {profiles,commands} | list available profiles or commands    | 
 +------------------------+----------------------------------------+ 
-| -c PROFILE COMMAND     | list available profiles or commands    | 
+| -c PROFILE COMMAND     | send COMMAND to device in PROFILE      | 
 +------------------------+----------------------------------------+ 
 
 
