@@ -1063,7 +1063,7 @@
             <child>
               <object class="GtkRadioButton" id="radioTelnet">
                 <property name="label" translatable="yes">Telnet</property>
-                <property name="related_action"/>
+<!--                <property name="related_action"/> -->
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
