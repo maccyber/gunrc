@@ -1,7 +1,7 @@
 import logging
-from gi.repository import Gtk
-from gi.repository import Gdk
-from gi.repository import GObject
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk, GObject
 from config import Config
 from xmlmap import xmlmap
 from sendsocket import sendToDevice
